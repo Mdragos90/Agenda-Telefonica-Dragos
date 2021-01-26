@@ -1,5 +1,5 @@
 //let numeInput = document.querySelector(".nume").value;
-//let telefonInput = document.querySelector(".telefon").value;
+//le telefonInput = document.querySelector(".telefon").value;
 
 let lista=[];
 let idxEditare = -1;
