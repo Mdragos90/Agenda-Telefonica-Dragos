@@ -1,11 +1,11 @@
-//var numeInput = document.querySelector(".nume").value;
-//var telefonInput = document.querySelector(".telefon").value;
+//let numeInput = document.querySelector(".nume").value;
+//let telefonInput = document.querySelector(".telefon").value;
 
-var lista=[];
-var idxEditare = -1;
+let lista=[];
+let idxEditare = -1;
 
 function onlyDigits(text, event){
-   var char = event.key;
+   let char = event.key;
  
    if(char>=0 && char<=9){
      return true;
@@ -16,8 +16,8 @@ function onlyDigits(text, event){
  }
 
  function draw(){
-    var str="";
-    for(var i=0;i<lista.length;i++){
+    let str="";
+    for(let i=0;i<lista.length;i++){
       str+=`
      <tr>
         <td>${lista[i].numeInput}</td>              
@@ -47,10 +47,10 @@ function editeaza(contacte){
    window.idxEditare = contacte;
       
    //preiau elementul din lista
-   var obj = lista[contacte];
+   let obj = lista[contacte];
    
    //preiau referinta catre formular
-   var form = document.querySelector("#formular");
+   let form = document.querySelector("#formular");
    
    //populez formularul cu ce contine persoana mea
    form.querySelector(".nume").value = obj.numeInput;
@@ -60,7 +60,7 @@ function editeaza(contacte){
  function adauga(form, event){
     event.preventDefault();
 
-    var obj = {
+    let obj = {
    };
 
    obj.numeInput = document.querySelector(".nume").value;
@@ -84,11 +84,11 @@ function editeaza(contacte){
  function createTHead(text, event) {
    event.preventDefault();
    
-   var table = document.querySelector('.liste');
-   var row = table.insertRow(0);
+   let table = document.querySelector('.liste');
+   let row = table.insertRow(0);
 
-   var cell1 = row.insertCell(0);
-   var cell2 = row.insertCell(1);
+   let cell1 = row.insertCell(0);
+   let cell2 = row.insertCell(1);
 
    cell1.innerHTML = "<b>Nume</b>";
    cell2.innerHTML = "<b>Telefon<b>";
