@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Agenda telefonica</title>
+</head>
+
+  <body onload="draw();">
+  <div class="container">
+  <h1>Agenda</h1>
+
+  <div class="form-container">
+      <form id="formular" onsubmit= "adauga(this,event); createTHead(this, event);">
+      <label>Nume: <input type="text" class="nume"></label>
+      <label>Telefon: <input type="text" class="telefon" onkeypress="onlyDigits(this,event);" value=" "></label>
+      <button name="btn" class="btn-albastru">Adauga Contact</button>
+    </form>
+      <table class="liste">
+        <!--<p class="lista-edit"></p>-->
+      </table>
+  </div>
+</div>
+
+<script src="script.js"></script> 
+</body>
+</html>

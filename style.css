@@ -1,0 +1,36 @@
+body {
+  background-color: #f7f7e8;
+  text-align: center;
+}
+
+#formular {
+  background-color: #c7cfb7;
+  padding: 10px;
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 50%;
+  margin-top: 5%;
+  width: 40%;
+  border-radius: 10px;
+}
+
+.btn-albastru {
+  background-color: rgb(89, 89, 112);
+  color: #fff;
+  border-radius: 10px;
+  border-style: none;
+  padding: 7px;
+  margin-top: 5px;
+}
+
+.liste {
+  background-color: #9dad7f;
+  padding: 10px;
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 50%;
+  margin-top: 5%;
+  width: 40%;
+  border-radius: 10px;
+  box-sizing: content-box;
+}
